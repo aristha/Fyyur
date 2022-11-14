@@ -24,7 +24,7 @@ Our tech stack will include the following:
  * **virtualenv** as a tool to create isolated Python environments
  * **SQLAlchemy ORM** to be our ORM library of choice
  * **PostgreSQL** as our database of choice
- * **Python3** and **Flask** as our server language and server framework
+ * **py** and **Flask** as our server language and server framework
  * **Flask-Migrate** for creating and running schema migrations
 You can download and install the dependencies mentioned above using `pip` as:
 ```
@@ -158,7 +158,7 @@ git push -u origin master
 
 3. **Initialize and activate a virtualenv using:**
 ```
-python -m virtualenv env
+py -m virtualenv env
 source env/bin/activate
 ```
 >**Note** - In Windows, the `env` does not have a `bin` directory. Therefore, you'd use the analogous command shown below:
@@ -168,14 +168,14 @@ source env/Scripts/activate
 
 4. **Install the dependencies:**
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 5. **Run the development server:**
 ```
-export FLASK_APP=myapp
-export FLASK_ENV=development # enables debug mode
-python3 app.py
+set FLASK_APP=myapp
+set FLASK_ENV=development # enables debug mode
+py app.py
 ```
 
 6. **Verify on the Browser**<br>
